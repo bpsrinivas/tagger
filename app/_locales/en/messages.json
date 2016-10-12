@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "tagger",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "a chrome plugin that allows a user to select the title and image URL on the page.",
+    "description": "The description of the application"
+  }
+}

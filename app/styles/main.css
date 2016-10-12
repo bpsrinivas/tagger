@@ -1,0 +1,70 @@
+/*
+  c0dfd9
+  e9ece5
+  b3c2bf
+  3b3a36
+*/
+
+body {
+
+}
+
+ul{
+  padding:0px;
+  width:200px;
+  display:table;
+  border-collapse: collapse;
+}
+
+li{
+	list-style:none;
+  display:table-row;
+}
+
+li:hover{
+  background:#c0dfd9;
+  color:white;
+  cursor: pointer;
+}
+
+li span{
+  display: table-cell;
+  padding-left:4px;
+}
+
+
+
+.picker{
+  width:20px;
+  height:20px;
+  background:yellow;
+}
+
+.text{
+  vertical-align: middle;
+}
+
+.infoBox{
+  background:white;
+  position:fixed;
+  opacity:1;
+  border:1px solid black;
+  bottom:30px;
+  right:30px;
+  height:100px;
+  width:400px;
+  padding:5px;
+}
+
+.reportBox{
+  overflow-y: auto;
+  background:white;
+  position:fixed;
+  opacity:1;
+  border:1px solid black;
+  bottom:150px;
+  right:30px;
+  height:200px;
+  width:400px;
+  padding:5px;
+}
