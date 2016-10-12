@@ -49,10 +49,15 @@ var Utility = (function(){
     d3.event.stopPropagation();
   };
 
+  var getImageUrl = function(rootEl){
+    return d3.select(rootEl).selectAll('img').attr('src');
+  };
+
   return {
-    getClosest:closest,
-    stopEvents:stopEvents,
-    getSelector:getSelector,
-    init:init
+    getImageUrl :getImageUrl,
+    getClosest  :closest,
+    stopEvents  :stopEvents,
+    getSelector :getSelector,
+    init        :init
   };
 })();

@@ -9,7 +9,13 @@ var Listener = (function(InfoBox,Utility){
   };
 
   var logSelector = function(){
-    var sel = Utility.init().getSelector(d3.event.target);
+    var sel = "";
+    if(selectionType === 'imagePicker'){
+       sel = Utility.getImageUrl(d3.event.target);
+    }else{
+        sel = Utility.init().getSelector(d3.event.target);
+    }
+
     var viewModel = InfoBox.getViewModel();
     var attr = (selectionType === 'imagePicker') ? 'imageSelector' : 'textSelector';
     viewModel[attr] = sel;

@@ -17,7 +17,7 @@ var InfoBox = (function(StorageHelper,InfoBoxModel){
   };
 
   var addLabels = function(selection){
-    var selectorLabels = ['Text Selector :','Img Selector  :'].map(function(lab){
+    var selectorLabels = ['Title Selector :','Image Url :'].map(function(lab){
       var div = selection.append('div');
       div.append('span').text(lab);
       return div.append('span');

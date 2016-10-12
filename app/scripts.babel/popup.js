@@ -27,7 +27,7 @@ var Popup = (function() {
       window.close();
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
           chrome.tabs.sendMessage(tabs[0].id, {object: d.id}, function(response) {
-            console.log(response.farewell);
+            console.log(response);
           });
         });
     };

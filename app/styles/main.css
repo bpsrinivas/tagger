@@ -45,6 +45,7 @@ li span{
 }
 
 .infoBox{
+  overflow-y: auto;
   background:white;
   position:fixed;
   opacity:1;
